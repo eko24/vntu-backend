@@ -1,0 +1,33 @@
+{
+  "name": "vntu-server",
+  "version": "0.1.0",
+  "description": "A back-end server for VNTU client",
+  "main": "server.js",
+  "dependencies": {
+    "morgan": "~1.0.0",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.0",
+    "express-session": "~1.0.0"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "start": "node server.js"
+  },
+  "author": "Erik Kotsuba",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^2.0.0",
+    "chai-http": "^1.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eko24/vntu-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eko24/vntu-backend/issues"
+  },
+  "homepage": "https://github.com/eko24/vntu-backend"
+}
