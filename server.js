@@ -1,5 +1,3 @@
-var path = require('path');
-var appDir = path.dirname(require.main.filename);
 var express = require('express');
 var helmet = require('helmet');
 var app = express();
@@ -7,20 +5,16 @@ var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var appPackage = require('./package.json');
+
 // var database = require('./config/database');
 var helmetConfig = require('./configuration/helmet.js')(helmet, app);
 
-
-
-app.use(express.static(__dirname + '/public'));
-
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({
-	'extended': 'true'
+    'extended': 'true'
 }));
-app.use(bodyParser.json());
 app.use(bodyParser.json({
-	type: 'application/vnd.api+json'
+    type: 'application/vnd.api+json'
 }));
 app.use(methodOverride());
 
