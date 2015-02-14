@@ -10,14 +10,18 @@
     "express-session": "~1.0.0"
   },
   "scripts": {
-    "test": "grunt test",
+    "test": "grunt",
     "start": "node server.js"
   },
   "author": "Erik Kotsuba",
   "license": "MIT",
   "devDependencies": {
     "chai": "^2.0.0",
-    "chai-http": "^1.0.0"
+    "chai-http": "^1.0.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.0",
+    "load-grunt-tasks": "^3.1.0"
   },
   "directories": {
     "test": "test"
