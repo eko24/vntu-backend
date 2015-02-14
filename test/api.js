@@ -15,7 +15,7 @@ describe('Basic', function() {
                     expect(res).to.have.status(200);
                     done();
                 } catch (e) {
-                    console.log(e)
+                    console.log(e);
                 }
             });
     });
